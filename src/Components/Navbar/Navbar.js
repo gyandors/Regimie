@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Navbar.css';
 import Navigation from './Navigation';
-import CartButton from '../Cart/CartButton';
+import CartButton from './CartButton';
 import Cart from '../Cart/Cart';
 
 export default function Navbar() {
