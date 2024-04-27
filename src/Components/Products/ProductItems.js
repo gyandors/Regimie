@@ -1,7 +1,6 @@
 import './ProductItems.css';
 
 export default function ProductItems(props) {
-  console.log(props);
   return (
     <li className="product-items">
       <img src={props.imageUrl} alt="Products" width={200} />

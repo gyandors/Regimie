@@ -1,0 +1,35 @@
+.cart-items {
+  max-height: 20rem;
+  overflow: auto;
+}
+
+.cart-items table {
+  width: 100%;
+}
+
+.cart-items th,
+.cart-items td {
+  border-bottom: 1px solid #999999;
+  padding: 1rem;
+}
+
+.cart-item-title {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-title p {
+  margin-left: 0.5rem;
+}
+
+.cart-item-remove {
+  padding: 4px;
+  background-color: #d14040;
+  color: #fff;
+  border: 1px solid #920b0b;
+  border-radius: 5px;
+}
+.cart-item-remove:hover {
+  cursor: pointer;
+  background-color: #920b0b;
+}

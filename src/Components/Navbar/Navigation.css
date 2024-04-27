@@ -14,9 +14,6 @@
 .nav-item:hover {
   border: 1px solid;
 }
-.nav-item:active {
-  transform: scale(0.9);
-}
 
 .nav-link {
   text-decoration: none;

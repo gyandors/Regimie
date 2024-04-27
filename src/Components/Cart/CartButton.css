@@ -10,7 +10,3 @@
   cursor: pointer;
   border: 1px solid;
 }
-
-.cart-btn:active {
-  transform: scale(0.9);
-}
