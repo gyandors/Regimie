@@ -1,0 +1,16 @@
+.cart-btn {
+  padding: 3px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.cart-btn:hover {
+  cursor: pointer;
+  border: 1px solid;
+}
+
+.cart-btn:active {
+  transform: scale(0.9);
+}

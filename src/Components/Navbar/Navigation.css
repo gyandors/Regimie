@@ -1,0 +1,24 @@
+.navigation {
+  width: 25rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 3px;
+}
+.nav-item:hover {
+  border: 1px solid;
+}
+.nav-item:active {
+  transform: scale(0.9);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
