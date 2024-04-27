@@ -1,4 +1,5 @@
 import Navbar from './Components/Navbar/Navbar';
+import Products from './Components/Products/Products';
 
 export default function App() {
   return (
@@ -6,7 +7,9 @@ export default function App() {
       <header>
         <Navbar />
       </header>
-      <main></main>
+      <main>
+        <Products />
+      </main>
       <footer></footer>
     </>
   );

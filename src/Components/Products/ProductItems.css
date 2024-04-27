@@ -1,0 +1,20 @@
+.product-desc h3 {
+  margin: 1rem 0;
+}
+
+.add-to-cart {
+  padding: 4px;
+  margin-top: 1rem;
+  background: transparent;
+  border: 1px solid;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.add-to-cart:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  border-color: #a7a7a7;
+}
+.add-to-cart:active {
+  transform: scale(0.9);
+}
