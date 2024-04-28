@@ -18,6 +18,6 @@ button:active {
 
 @media screen and (max-width: 460px) {
   html {
-    font-size: 0.8rem;
+    font-size: 13px;
   }
 }

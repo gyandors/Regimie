@@ -1,6 +1,6 @@
-import './CartButton.css';
-import CartIcon from '../Cart/CartIcon';
 import { useContext } from 'react';
+import './CartButton.css';
+import CartIcon from '../../Assets/CartIcon.svg';
 import ProductContext from '../Context/ProductContext';
 
 export default function CartButton(props) {
@@ -17,9 +17,9 @@ export default function CartButton(props) {
       onClick={() => props.onShowCart()}
     >
       <span>
-        <CartIcon />
+        <img src={CartIcon} alt="Cart Icon" />
       </span>
-      <span>{totalCartItems}</span>
+      <span className="total-cart-items">{totalCartItems}</span>
     </button>
   );
 }

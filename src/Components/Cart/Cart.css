@@ -8,7 +8,7 @@
 .cart-header {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid;
+  border-bottom: 2px solid #ccc;
 }
 
 .cart-header h3 {
@@ -36,16 +36,12 @@
   margin: 1rem 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .cart-footer {
   text-align: center;
 }
-
-/* .purchase-btn {
-  padding: 2px;
-   float: right; 
-} */
 
 @keyframes CartAnimate {
   from {

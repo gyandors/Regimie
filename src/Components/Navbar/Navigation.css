@@ -5,17 +5,14 @@
   justify-content: space-around;
 }
 
-.nav-item {
+.nav-link {
+  padding: 3px;
+  text-decoration: none;
+  color: #2e2e2e;
   font-weight: bold;
   border: 1px solid transparent;
   border-radius: 5px;
-  padding: 3px;
 }
-.nav-item:hover {
+.nav-link:hover {
   border: 1px solid;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: black;
 }

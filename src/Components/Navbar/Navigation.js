@@ -1,22 +1,23 @@
+import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 export default function Navigation() {
   return (
     <ul className="navigation">
-      <li className="nav-item">
-        <a className="nav-link " href="/">
+      <li>
+        <Link className="nav-link " to="/">
           Home
-        </a>
+        </Link>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/">
+      <li>
+        <Link className="nav-link" to="store">
           Store
-        </a>
+        </Link>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/">
+      <li>
+        <Link className="nav-link" to="about">
           About
-        </a>
+        </Link>
       </li>
     </ul>
   );

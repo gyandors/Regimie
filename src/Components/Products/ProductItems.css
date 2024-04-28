@@ -1,3 +1,7 @@
+.product-items {
+  flex-grow: 1;
+}
+
 .product-desc h3 {
   margin: 1rem 0;
 }

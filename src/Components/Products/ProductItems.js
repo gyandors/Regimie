@@ -7,6 +7,7 @@ export default function ProductItems(props) {
 
   function handleClick() {
     ctx.onAddItems({
+      id: props.id,
       title: props.title,
       price: props.price,
       imageUrl: props.imageUrl,

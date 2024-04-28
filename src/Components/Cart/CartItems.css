@@ -33,3 +33,9 @@
   cursor: pointer;
   background-color: #920b0b;
 }
+
+@media screen and (max-width: 460px) {
+  .cart-items {
+    max-width: 20rem;
+  }
+}

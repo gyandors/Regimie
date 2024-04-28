@@ -39,6 +39,7 @@ export default function Products() {
           return (
             <ProductItems
               key={p.id}
+              id={p.id}
               title={p.title}
               price={p.price}
               imageUrl={p.imageUrl}

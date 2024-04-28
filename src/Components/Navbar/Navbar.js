@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Navigation from './Navigation';
 import CartButton from './CartButton';
@@ -12,14 +13,16 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">
-        <h1>Regimie</h1>
-        <p>A Gyandors Brand</p>
-      </div>
-      <Navigation />
-      <CartButton onShowCart={handleShowCart} />
-      {showCart && <Cart onShowCart={handleShowCart} />}
-    </nav>
+    <header className="main-header">
+      <nav className="navbar">
+        <Link className="navbar-brand" to="/">
+          <h1>Regimie</h1>
+          <p>A Gyandors Brand</p>
+        </Link>
+        <Navigation />
+        <CartButton onShowCart={handleShowCart} />
+        {showCart && <Cart onShowCart={handleShowCart} />}
+      </nav>
+    </header>
   );
 }
