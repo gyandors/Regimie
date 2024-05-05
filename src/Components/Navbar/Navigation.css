@@ -5,14 +5,15 @@
   justify-content: space-around;
 }
 
-.nav-link {
+.navigation a {
   padding: 3px;
   text-decoration: none;
   color: #2e2e2e;
   font-weight: bold;
-  border: 1px solid transparent;
-  border-radius: 5px;
 }
-.nav-link:hover {
-  border: 1px solid;
+
+.navigation a:hover,
+.navigation a.active {
+  color: #000;
+  text-decoration: underline 2px;
 }

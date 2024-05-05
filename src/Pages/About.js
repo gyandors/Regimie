@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <main style={{ marginTop: '5rem' }}>
+    <main>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam id
         veritatis ad numquam repudiandae. Dolor voluptatibus nihil minima fugit,

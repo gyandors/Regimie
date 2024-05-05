@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main style={{ marginTop: '5rem' }}>
+    <main>
       <h1>Welcome to Home page</h1>
     </main>
   );
