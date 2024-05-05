@@ -18,7 +18,6 @@ button:active {
 
 main {
   margin: 5rem auto;
-  text-align: center;
 }
 
 @media screen and (max-width: 460px) {

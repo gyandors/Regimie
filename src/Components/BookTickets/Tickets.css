@@ -1,0 +1,56 @@
+.tickets {
+  width: 60%;
+  margin: auto;
+}
+
+.tickets h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ticket-list {
+  list-style: none;
+}
+
+.ticket-items {
+  padding: 1rem 0;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ticket-items .date {
+  font-weight: bold;
+  width: 4rem;
+}
+
+.ticket-items .city {
+  width: 7rem;
+}
+
+.ticket-items .place {
+  width: 10rem;
+}
+
+.ticket-items button {
+  padding: 4px;
+  background-color: #bed7dc;
+  border: 1px solid #60949e;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.ticket-items button:hover {
+  cursor: pointer;
+  background-color: #81c2cf;
+  border-color: #60949e;
+}
+
+@media screen and (max-width: 460px) {
+  .tickets {
+    width: 90%;
+  }
+}
