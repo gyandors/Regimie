@@ -1,17 +1,13 @@
-.main-header {
+.header {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-}
-
-.navbar {
   padding: 0.5rem;
   background-color: #b3c8cf;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
 }
 
 .navbar-brand {

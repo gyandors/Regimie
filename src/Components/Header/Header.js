@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './Header.css';
 import Navigation from './Navigation';
 import CartButton from './CartButton';
 import Cart from '../Cart/Cart';
 
-export default function Navbar() {
+export default function Header() {
   const [showCart, setShowCart] = useState(false);
 
   function handleShowCart() {
@@ -13,16 +13,16 @@ export default function Navbar() {
   }
 
   return (
-    <header className="main-header">
-      <nav className="navbar">
-        <Link className="navbar-brand" to="/">
-          <h1>Regimie</h1>
-          <p>A Gyandors Brand</p>
-        </Link>
+    <header className="header">
+      <Link className="navbar-brand" to="/">
+        <h1>Regimie</h1>
+        <p>A Gyandors Brand</p>
+      </Link>
+      <nav>
         <Navigation />
-        <CartButton onShowCart={handleShowCart} />
-        {showCart && <Cart onShowCart={handleShowCart} />}
       </nav>
+      <CartButton onShowCart={handleShowCart} />
+      {showCart && <Cart onShowCart={handleShowCart} />}
     </header>
   );
 }

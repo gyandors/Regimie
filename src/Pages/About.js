@@ -1,6 +1,7 @@
 export default function About() {
   return (
     <main>
+      <h3>About: </h3>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam id
         veritatis ad numquam repudiandae. Dolor voluptatibus nihil minima fugit,
@@ -16,6 +17,14 @@ export default function About() {
         reprehenderit quasi aliquam, quaerat ipsum, qui eos alias architecto vel
         rem deserunt maxime velit quia animi neque debitis quas totam hic nihil
         officiis harum sed! Nesciunt aliquam ratione eveniet quod minima.
+      </p>
+      <br /> <br />
+      <h3>Motive: </h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aperiam
+        minima molestiae quae quia ratione molestias beatae cumque rerum
+        adipisci. Quasi, repellendus laudantium temporibus nobis repudiandae
+        illum enim placeat! Maxime!
       </p>
     </main>
   );

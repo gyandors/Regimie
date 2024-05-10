@@ -1,12 +1,11 @@
 .navigation {
-  width: 25rem;
   list-style: none;
   display: flex;
   justify-content: space-around;
+  gap: 2rem;
 }
 
 .navigation a {
-  padding: 3px;
   text-decoration: none;
   color: #2e2e2e;
   font-weight: bold;
@@ -15,5 +14,5 @@
 .navigation a:hover,
 .navigation a.active {
   color: #000;
-  text-decoration: underline 2px;
+  border-bottom: 2px solid;
 }

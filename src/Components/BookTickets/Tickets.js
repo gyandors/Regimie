@@ -14,9 +14,9 @@ export default function Tickets() {
     <section className="tickets">
       <h1>Book Tickets</h1>
       <ul className="ticket-list">
-        {tickets.map((t) => {
+        {tickets.map((t, i) => {
           return (
-            <li className="ticket-items">
+            <li className="ticket-items" key={i}>
               <div className="date">{t.date}</div>
               <div className="city">{t.city}</div>
               <div className="place">{t.place}</div>

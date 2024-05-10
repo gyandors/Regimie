@@ -1,0 +1,40 @@
+.contact-form {
+  max-width: 220px;
+  margin: auto;
+  padding: 1rem;
+  background-color: #ececec59;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form label {
+  display: block;
+  width: fit-content;
+  margin-bottom: 0.3rem;
+  color: #272d36;
+}
+
+.contact-form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.contact-form input:focus {
+  outline: none;
+  border-color: #646464;
+}
+
+.contact-form p {
+  font-size: 0.8rem;
+}
+
+.contact-form button {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  cursor: pointer;
+}

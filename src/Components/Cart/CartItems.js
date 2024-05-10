@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import './CartItems.css';
-import ProductContext from '../Context/ProductContext';
+import ProductContext from '../../Context/ProductContext';
 
 export default function CartItems() {
   const ctx = useContext(ProductContext);

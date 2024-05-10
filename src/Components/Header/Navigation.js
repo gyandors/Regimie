@@ -28,6 +28,14 @@ export default function Navigation() {
           About
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          className={({ isActive }) => (isActive ? 'active' : '')}
+          to="contact"
+        >
+          Contact Us
+        </NavLink>
+      </li>
     </ul>
   );
 }
