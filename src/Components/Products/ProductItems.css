@@ -1,5 +1,6 @@
 .product-items {
-  flex-grow: 1;
+  text-decoration: none;
+  color: #000;
 }
 
 .product-desc h3 {

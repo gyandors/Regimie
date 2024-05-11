@@ -5,34 +5,22 @@ export default function Navigation() {
   return (
     <ul className="navigation">
       <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? 'active' : '')}
-          to="/"
-        >
+        <NavLink activeClassName="active" to="/" exact>
           Home
         </NavLink>
       </li>
       <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? 'active' : '')}
-          to="store"
-        >
+        <NavLink activeClassName="active" to="/store">
           Store
         </NavLink>
       </li>
       <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? 'active' : '')}
-          to="about"
-        >
+        <NavLink activeClassName="active" to="/about">
           About
         </NavLink>
       </li>
       <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? 'active' : '')}
-          to="contact"
-        >
+        <NavLink activeClassName="active" to="/contact">
           Contact Us
         </NavLink>
       </li>

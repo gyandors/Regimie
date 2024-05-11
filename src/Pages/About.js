@@ -1,8 +1,12 @@
+import { Link, Route } from 'react-router-dom';
+import diamondPic from '../Assets/Diamond.jpeg';
+
 export default function About() {
   return (
     <main>
       <h3>About: </h3>
-      <p>
+      <img src={diamondPic} alt="" width={150} />
+      <span>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam id
         veritatis ad numquam repudiandae. Dolor voluptatibus nihil minima fugit,
         quidem enim quisquam eius ipsam eligendi dolores aspernatur!
@@ -17,9 +21,16 @@ export default function About() {
         reprehenderit quasi aliquam, quaerat ipsum, qui eos alias architecto vel
         rem deserunt maxime velit quia animi neque debitis quas totam hic nihil
         officiis harum sed! Nesciunt aliquam ratione eveniet quod minima.
-      </p>
-      <br /> <br />
-      <h3>Motive: </h3>
+      </span>
+
+      <Link style={{ marginTop: '15px', display: 'block' }} to="/about/address">
+        Click here for address
+      </Link>
+      <Route path="/about/address">
+        <address>Bidar, Karnataka, India</address>
+      </Route>
+
+      <h3 style={{ marginTop: '15px' }}>Motive: </h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aperiam
         minima molestiae quae quia ratione molestias beatae cumque rerum

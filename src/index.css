@@ -25,4 +25,7 @@ main {
   html {
     font-size: 13px;
   }
+  main {
+    margin-top: 7rem;
+  }
 }

@@ -1,30 +1,51 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 import { ProductContextProvider } from './Context/ProductContext';
-import Root from './Pages/Root';
+
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import Store from './Pages/Store';
 import About from './Pages/About';
 import ContactUs from './Pages/ContacUs';
 import NotFound from './Pages/ErrorPages/NotFound';
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Root />,
-    errorElement: <NotFound />,
-    children: [
-      { path: '', element: <Home /> },
-      { path: 'store', element: <Store /> },
-      { path: 'about', element: <About /> },
-      { path: 'contact', element: <ContactUs /> },
-    ],
-  },
-]);
+import ProductDetails from './Pages/ProductDetails';
 
 export default function App() {
   return (
     <ProductContextProvider>
-      <RouterProvider router={router} />
+      <BrowserRouter>
+        <Header />
+
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+
+          <Route path="/store" exact>
+            <Store />
+          </Route>
+
+          <Route path="/store/:productId">
+            <ProductDetails />
+          </Route>
+
+          <Route path="/about">
+            <About />
+          </Route>
+
+          <Route path="/contact">
+            <ContactUs />
+          </Route>
+
+          {/* The below Route is for invalid URL */}
+          <Route>
+            <NotFound />
+          </Route>
+        </Switch>
+
+        <Footer />
+      </BrowserRouter>
     </ProductContextProvider>
   );
 }
