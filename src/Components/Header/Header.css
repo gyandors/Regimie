@@ -24,3 +24,25 @@
   font-size: 0.6rem;
   text-align: end;
 }
+
+.login-cart-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-btn {
+  color: #000;
+  text-decoration: none;
+  font: inherit;
+  font-weight: bold;
+  padding: 3px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  border: 1px solid;
+}

@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import './CartButton.css';
 import CartIcon from '../../Assets/CartIcon.svg';
-import ProductContext from '../../Context/ProductContext';
+import CartContext from '../../Context/CartContext';
 
 export default function CartButton(props) {
-  const ctx = useContext(ProductContext);
+  const ctx = useContext(CartContext);
 
   const totalCartItems = ctx.items.reduce((prevValue, currValue) => {
     return prevValue + currValue.quantity;

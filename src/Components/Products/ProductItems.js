@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './ProductItems.css';
-import ProductContext from '../../Context/ProductContext';
+import CartContext from '../../Context/CartContext';
 
 export default function ProductItems(props) {
-  const ctx = useContext(ProductContext);
+  const ctx = useContext(CartContext);
 
   function handleClick() {
     ctx.onAddItems({
