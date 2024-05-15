@@ -1,5 +1,5 @@
 import './Products.css';
-import { DummyProducts } from '../../Assets/DummyProducts';
+import { DummyProducts } from '../../Assets/DummyData';
 import ProductItems from './ProductItems';
 
 export default function Products() {

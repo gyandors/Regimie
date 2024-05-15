@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { DummyProducts } from '../Assets/DummyProducts';
+import { DummyProducts } from '../Assets/DummyData';
 
 export default function ProductDetails() {
   const params = useParams();

@@ -1,7 +1,8 @@
+import { useContext } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Header from './Components/Header/Header';
-import Footer from './Components/Footer';
+// import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home';
 import Store from './Pages/Store';
 import About from './Pages/About';
@@ -10,7 +11,11 @@ import NotFound from './Pages/ErrorPages/NotFound';
 import ProductDetails from './Pages/ProductDetails';
 import Auth from './Pages/Auth';
 
+import AuthContext from './Context/AuthContext';
+
 export default function App() {
+  const authCtx = useContext(AuthContext);
+
   return (
     <>
       <Header />
@@ -25,7 +30,7 @@ export default function App() {
         </Route>
 
         <Route path="/store" exact>
-          <Store />
+          {authCtx.isLoggedIn ? <Store /> : <Redirect to="/auth" />}
         </Route>
 
         <Route path="/store/:productId">
@@ -41,16 +46,17 @@ export default function App() {
         </Route>
 
         <Route path="/auth">
-          <Auth />
+          {!authCtx.isLoggedIn && <Auth />}
+          {authCtx.isLoggedIn && <Redirect to="/store" />}
         </Route>
 
         {/* The below Route is for invalid URL */}
-        <Route path="*">
+        <Route>
           <NotFound />
         </Route>
       </Switch>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
