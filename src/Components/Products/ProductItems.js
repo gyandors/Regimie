@@ -2,18 +2,36 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './ProductItems.css';
 import CartContext from '../../Context/CartContext';
+import AuthContext from '../../Context/AuthContext';
 
 export default function ProductItems(props) {
-  const ctx = useContext(CartContext);
+  const cartCtx = useContext(CartContext);
+  const authCtx = useContext(AuthContext);
 
   function handleClick() {
-    ctx.onAddItems({
+    const cartItem = {
       id: props.id,
       title: props.title,
       price: props.price,
       imageUrl: props.imageUrl,
       quantity: 1,
-    });
+    };
+
+    fetch(`https://crudcrud.com/api/22ee7d8bf5b74aaea357464de281ceb6/cart`, {
+      method: 'POST',
+      body: JSON.stringify(cartItem),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((res) => {
+        console.log(res);
+        if (res.ok) return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        cartCtx.onAddItems(cartItem);
+      });
   }
 
   return (

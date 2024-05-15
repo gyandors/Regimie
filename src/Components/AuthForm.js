@@ -35,8 +35,8 @@ export default function AuthForm() {
 
         const data = await response.json();
         if (response.ok) {
-          // console.log(data.idToken);
-          authCtx.login(data.idToken);
+          // console.log(data);
+          authCtx.login(data.idToken, data.email);
           history.replace('/store');
         } else {
           // console.log(data);

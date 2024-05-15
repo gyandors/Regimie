@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 
 const CartContext = createContext();
 
@@ -22,11 +22,31 @@ function CartContextProvider(props) {
 
   function handleRemoveItems(id) {}
 
+  function handleLoadItems() {}
+
   const providerValue = {
     items: items,
     onAddItems: handleAddItems,
     onRemoveItems: handleRemoveItems,
+    onLoadItems: handleLoadItems,
   };
+
+  useEffect(() => {
+    fetch('https://crudcrud.com/api/22ee7d8bf5b74aaea357464de281ceb6/cart')
+      .then((res) => {
+        console.log(res);
+        if (res.ok) return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setItems(data);
+
+        // for (const val of data) {
+        //   console.log(val);
+
+        // }
+      });
+  }, []);
 
   return (
     <CartContext.Provider value={providerValue}>
